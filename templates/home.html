@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "/static/css/styles.css">
+    <link rel="shortcut icon" href="#">
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type= "text/javascript" src= "/static/js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>Mafia</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>SOŁTYSOWICKA MAFIA</h1>
+    </div>
+    <div class="container-1">
+        <button type="button" class="btn">ZACZNIJ NOWĄ GRĘ</button>
+    </div>
+    <div class="container-2">
+        <p class="c2">Podaj liczbę graczy:</p>
+        <form class="c2" id="my-form">
+            <input type="text" autocomplete="off" id="nop" name="nop">
+            <input type="submit">
+        </form>
+        <p class="c2" id="nop-msg"></p>
+        <p class="c2 after-submit">Polecany rozkład:</p>
+        <table class="c2 after-submit center">
+          <tr>
+            <th>Miasto</th>
+            <th>Mafia</th>
+            <th>Syndykat</th>
+          </tr>
+          <tr>
+            <td id="miasto"></td>
+            <td id="mafia"></td>
+            <td id="syndykat"></td>
+          </tr>
+        </table>
+        <div class="after-submit miasto-img-row">
+            <p>MIASTO:</p>
+            <img class="karty" id="krol_kier" src="static/img/krol_kier.png">
+            <img class="karty" id="dama_kier" src="static/img/dama_kier.png">
+            <img class="karty" id="krol_karo" src="static/img/krol_karo.png">
+            <img class="karty" id="10_kier" src="static/img/10_kier.png">
+        </div>
+        <div class="after-submit miasto-img-row">
+            <p class="after-submit">MAFIA:</p>
+            <img class="karty" id="as_pik" src="static/img/as_pik.png">
+            <img class="karty" id="walet_pik" src="static/img/walet_pik.png">
+            <img class="karty" id="dama_pik" src="static/img/dama_pik.png">
+        </div>
+    </div>
+</body>
+</html>

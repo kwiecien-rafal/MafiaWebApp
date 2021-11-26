@@ -1,0 +1,46 @@
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+}
+.btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container-1 {
+    display: grid;
+}
+div.container-2 {
+    display: none;
+}
+
+.c2 {
+    text-align: center;
+    maring: auto;
+}
+
+.after-submit {
+    display: none;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.karty {
+    border: 2px solid;
+    height: 189px;
+    width: 120px;
+    display: none;
+}
