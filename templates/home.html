@@ -13,14 +13,16 @@
         <h1>SOŁTYSOWICKA MAFIA</h1>
     </div>
     <div class="container-1">
-        <button type="button" class="btn">ZACZNIJ NOWĄ GRĘ</button>
+        <button type="button" class="btn-start">ZACZNIJ NOWĄ GRĘ</button>
     </div>
     <div class="container-2">
-        <p class="c2">Podaj liczbę graczy:</p>
-        <form class="c2" id="my-form">
-            <input type="text" autocomplete="off" id="nop" name="nop">
-            <input type="submit">
-        </form>
+        <div class="prompt">
+            <p class="c2">Podaj liczbę graczy:</p>
+            <form class="c2" id="my-form">
+                <input type="text" autocomplete="off" id="nop" name="nop">
+                <input type="submit" class="submit2">
+            </form>
+        </div>
         <p class="c2" id="nop-msg"></p>
         <p class="c2 after-submit">Polecany rozkład:</p>
         <table class="c2 after-submit center">
@@ -35,18 +37,102 @@
             <td id="syndykat"></td>
           </tr>
         </table>
-        <div class="after-submit miasto-img-row">
-            <p>MIASTO:</p>
-            <img class="karty" id="krol_kier" src="static/img/krol_kier.png">
-            <img class="karty" id="dama_kier" src="static/img/dama_kier.png">
-            <img class="karty" id="krol_karo" src="static/img/krol_karo.png">
-            <img class="karty" id="10_kier" src="static/img/10_kier.png">
-        </div>
-        <div class="after-submit miasto-img-row">
-            <p class="after-submit">MAFIA:</p>
-            <img class="karty" id="as_pik" src="static/img/as_pik.png">
-            <img class="karty" id="walet_pik" src="static/img/walet_pik.png">
-            <img class="karty" id="dama_pik" src="static/img/dama_pik.png">
+        <div class="after-submit">
+            <div class="miasto-img-row img-row">
+                <p>MIASTO:</p>
+                <div class="karty">
+                    <div class="karty-item" id="as_karo" >
+                        <img src="static/img/as_karo.png">
+                        <span>Świr</span>
+                    </div>
+                    <div class="karty-item" id="krol_kier" >
+                        <img src="static/img/krol_kier.png">
+                        <span>Lekarz</span>
+                    </div>
+                    <div class="karty-item" id="krol_karo" >
+                        <img src="static/img/krol_karo.png">
+                        <span>Kolejarz</span>
+                    </div>
+                    <div class="karty-item" id="dama_kier" >
+                        <img src="static/img/dama_kier.png">
+                        <span>PLO</span>
+                    </div>
+                    <div class="karty-item" id="walet_kier" >
+                        <img src="static/img/walet_kier.png">
+                        <span>Szybki z Miasta</span>
+                    </div>
+                    <div class="karty-item" id="10_kier" >
+                        <img src="static/img/10_kier.png">
+                        <span>Detektyw</span>
+                    </div>
+                    <div class="karty-item" id="9_kier" >
+                        <img src="static/img/9_kier.png">
+                        <span>Święty</span>
+                    </div>
+                    <div class="karty-item" id="8_kier" >
+                        <img src="static/img/8_kier.png">
+                        <span>Ochroniarz</span>
+                    </div>
+                    <div class="karty-item" id="7_kier" >
+                        <img src="static/img/7_kier.png">
+                        <span>Żyd</span>
+                    </div>
+                    <div class="karty-item" id="6_kier" >
+                        <img src="static/img/6_kier.png">
+                        <span>Sędzia</span>
+                    </div>
+                    <div class="karty-item" id="2_kier" >
+                        <img src="static/img/2_kier.png">
+                        <span>Zwykły Mieszczanin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mafia-img-row img-row">
+                <p>MAFIA:</p>
+                <div class="karty">
+                    <div class="karty-item" id="as_pik" >
+                        <img src="static/img/as_pik.png">
+                        <span>Szef Mafii</span>
+                    </div>
+                    <div class="karty-item" id="krol_pik" >
+                        <img src="static/img/krol_pik.png">
+                        <span>Szantażysta</span>
+                    </div>
+                    <div class="karty-item" id="dama_pik" >
+                        <img src="static/img/dama_pik.png">
+                        <span>Kokietka</span>
+                    </div>
+                    <div class="karty-item" id="walet_pik" >
+                        <img src="static/img/walet_pik.png">
+                        <span>Szybki z Mafii</span>
+                    </div>
+                    <div class="karty-item" id="2_pik" >
+                        <img src="static/img/2_pik.png">
+                        <span>Zwykły Mafioso</span>
+                    </div>
+                </div>
+            </div>
+            <div class="syndykat-img-row img-row">
+                <p id="syndykat-txt">SYNDYKAT:</p>
+                <div class="karty">
+                    <div class="karty-item" id="as_trefl" >
+                        <img src="static/img/as_trefl.png">
+                        <span>Anioł Śmierci</span>
+                    </div>
+                    <div class="karty-item" id="krol_trefl" >
+                        <img src="static/img/krol_trefl.png">
+                        <span>Burmistrz</span>
+                    </div>
+                    <div class="karty-item" id="10_trefl" >
+                        <img src="static/img/10_trefl.png">
+                        <span>Terrorysta</span>
+                    </div>
+                    <div class="karty-item" id="8_trefl" >
+                        <img src="static/img/8_trefl.png">
+                        <span>Barman</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
